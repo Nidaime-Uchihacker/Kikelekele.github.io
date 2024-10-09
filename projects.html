@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos - Kikelekele</title>
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <style>
+        .service-card {
+            margin-top: 2rem;
+        }
+        footer {
+            padding: 20px;
+            background-color: #424242;
+            color: white;
+            text-align: center;
+        }
+        .fixed-action-btn {
+            position: fixed;
+            bottom: 45px;
+            right: 24px;
+        }
+    </style>
+</head>
+<body>
+
+
+
+
+<!-- Projetos -->
+
+<!-- Projects Section -->
+<section id="projects" class="section scrollspy">
+    <div class="container">
+        <h2 class="center">Projetos Recentes</h2>
+        <div class="row">
+            <div class="col s12 m4">
+                <img src="img/recente (100).jpg" alt="Projeto 1" class="responsive-img">
+                <h5>Edifício Comercial</h5>
+                <p>Projeto de construção de um edifício comercial moderno no centro da cidade.</p>
+            </div>
+            <div class="col s12 m4">
+                <img src="img/pedreira (6).jpg" alt="Projeto 2" class="responsive-img">
+                <h5 class="mt-3">Residência Familiar</h5>
+                <p>Projeto residencial de alto padrão com foco em eficiência energética.</p>
+            </div>
+            <div class="col s12 m4">
+                <img src="img/arquitetura (3).jpg" alt="Projeto 3" class="responsive-img">
+                <h5 class="mt-3">Parque Industrial</h5>
+                <p>Desenvolvimento de um complexo industrial completo e eficiente.</p>
+            </div>
+        </div>
+    </div>
+
+<div class="center mt-3">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#moreRenovationImages" aria-expanded="false" aria-controls="moreRenovationImages">
+                    Ver Mais
+                </button>
+            </div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="section grey lighten-4 scrollspy">
+    <div class="container">
+        <h2 class="center">Entre em Contato</h2>
+        <div class="row">
+            <div class="col s12 m6">
+                <form>
+                    <div class="input-field">
+                        <input type="text" id="name">
+                        <label for="name">Nome</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="email" id="email">
+                        <label for="email">E-mail</label>
+                    </div>
+                    <div class="input-field">
+                        <textarea id="message" class="materialize-textarea"></textarea>
+                        <label for="message">Mensagem</label>
+                    </div>
+                    <button type="submit" class="btn-large waves-effect waves-light blue">Enviar</button>
+                </form>
+            </div>
+            <div class="col s12 m6">
+                <h5>Nossos Contatos</h5>
+                <p><strong>Endereço:</strong> Rua Exemplo, 123 - Cidade</p>
+                <p><strong>Telefone:</strong> (11) 1234-5678</p>
+                <p><strong>Email:</strong> contato@kikelekele.com</p>
+                <p><strong>Horário de Funcionamento:</strong> Seg - Sex: 08h00 - 18h00</p>
+            </div>
+        </div>
+    </div>
+</section>
+ 
+
+<!-- Footer -->
+<footer class="py-3 bg-dark text-white">
+    <div class="container">
+        <p class="mb-0">© 2024 Kikelekele - Construção Civil e Prestação de Serviços. Todos os direitos reservados.</p>
+        <address>
+            <strong>Kikelekele Construções e Prestação de serviços. Lda</strong><br>
+            
+            <addr title="gps">
+                GPS: <a href="maps.google.com/#">Angola, Luanda, Cacuaco, Deolinda Rodrigues, Rua David Futa, Casa s/n°</a>
+            </addr><br>
+            <addr title="phone">Tel: <a href="tel:+244 945338877">+244 945338877</a></addr>
+        </address>
+        <address title="whatsapp">
+            <addr title="whatsapp">Zap: <a href="api.whatsapp.com/945338877">945338877</a></addr>
+        </address>
+        <address title="email">
+            <strong>Angel Tech 2.0</strong><br>
+            <addr title="email">E-mail: <a href="mailto: Kikelekele construct@gmail.com">kikelekele construct@gmail.com</a></addr>
+        </address>
+    </div>
+</footer>
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+    </script>
+<script src="js/materialize.min.js"></script>
+</body>
+</html>
