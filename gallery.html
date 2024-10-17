@@ -15,15 +15,10 @@
             color: white;
             text-align: center;
         }
-        .fixed-action-btn {
-            position: fixed;
-            bottom: 45px;
-            right: 24px;
-        }
-
         .gallery img {
             width: 100%;
-            height: auto;
+            height: 200px;
+            object-fit: cover;
             cursor: pointer;
         }
         .gallery-title {
@@ -32,8 +27,6 @@
         .load-more-btn {
             margin-top: 20px;
         }
-    </style>
-    <style>
         .modal img {
             width: 100%;
             height: auto;
@@ -48,6 +41,7 @@
         <a href="#" class="brand-logo">Kikelekele</a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">&#9778;</i></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
             <li><a href="about.html">Sobre Nós</a></li>
             <li><a href="services.html">Serviços</a></li>
             <li><a href="projects.html">Projetos</a></li>
@@ -57,333 +51,162 @@
 </nav>
 
 <ul class="sidenav" id="mobile-demo">
+    <li><a href="index.html">Home</a></li>
     <li><a href="about.html">Sobre Nós</a></li>
     <li><a href="services.html">Serviços</a></li>
     <li><a href="projects.html">Projetos</a></li>
     <li><a href="#contact">Contato</a></li>
 </ul>
 
-        </div>
-    </div>
-</nav>
-
 <!-- Galeria de Imagens Dividida por Seções -->
 <section id="gallery" class="section container">
     <h4 class="center gallery-title">Galeria de Projetos</h4>
-        <!-- Seção: Construção Civil -->
-        <div class="row">
-            <h5 class="center">Construção Civil</h5>
-            <div id="gallery-row" class="col s12 m12">
-                <div class="col s12 m4 gallery">
-                    <img src="img/pedreira (1).jpg" class="materialboxed" alt="Construção 1" class="materialboxed">
-                </div>
-                </div>
-                <div class="col s12 m4 gallery">
-                    <img src="img/pedreira (2).jpg" alt="Construção 2" class="materialboxed">
-                </div>
-                <div class="col s12 m4 gallery">
-                    <img src="img/pedreira (3).jpg" alt="Construção 3" class="materialboxed">
-                </div>
+    
+    <!-- Seção: Construção Civil -->
+    <div class="row">
+        <h5 class="center">Construção Civil</h5>
+        <div id="civil-gallery" class="col s12">
+            <div class="col s12 m4 gallery">
+                <img src="img/pedreira (1).jpg" alt="Construção 1" data-caption="Projeto de construção em Vladiskova.">
             </div>
-            <!-- Botão de Ver Mais -->
-    <div class="row center load-more-btn">
-        <button class="btn waves-effect waves-light blue" id="load-more-btn">Ver Mais Imagens</button>
-    </div>
-               
-            
-        <!-- Seção: Reformas e Manutenção -->
-        <div class="row">
-            <h5 class="center">Reformas e Manutenção</h5>
-            <div id="gallery-row" class="col s12 m12">
-                <div class="col s12 m4 gallery">
-                    <img src="img/reforma (1).jpg" alt="Reforma 1" class="materialboxed">
-                </div>
-                <div class="col s12 m4 gallery">
-                    <img src="img/reforma (2).jpg" alt="Reforma 2" class="materialboxed">
-                </div>
-                <div class="col s12 m4 gallery">
-                    <img src="img/reforma (3).jpg" alt="Reforma 3" class="materialboxed">
-                </div>
+            <div class="col s12 m4 gallery">
+                <img src="img/pedreira (2).jpg" alt="Construção 2" data-caption="Desenvolvimento de nova área residencial.">
             </div>
-            <!-- Botão de Ver Mais -->
-    <div class="row center load-more-btn">
-        <button class="btn waves-effect waves-light blue" id="load-more-btn">Ver Mais Imagens</button>
-    </div>
-
-        <!-- Seção: Consultoria Técnica -->
-        <div class="row">
-            <h5 class="center">Consultoria Técnica</h5>
-            <div id="gallery-row" class="col s12 m12">
-                <div class="col s12 m4 gallery">
-                    <img src="img/consultoria1.jpg" class="materialboxed" alt="Consultoria 1" class="materialboxed">
-                </div>
-                <div class="col s12 m4 gallery">
-                    <img src="img/consultoria2.jpg" alt="Consultoria 2" class="materialboxed">
-                </div>
-                <div class="col s12 m4 gallery">
-                    <img src="img/consultoria3.jpg" alt="Consultoria 3" class="materialboxed">
-                </div>
+            <div class="col s12 m4 gallery">
+                <img src="img/pedreira (3).jpg" alt="Construção 3" data-caption="Construção de edifício comercial.">
             </div>
-            <!-- Botão de Ver Mais -->
-    <div class="row center load-more-btn">
-        <button class="btn waves-effect waves-light blue" id="load-more-btn">Ver Mais Imagens</button>
+        </div>
+        <div class="row center load-more-btn">
+            <button class="btn waves-effect waves-light blue" id="civil-load-more-btn">Ver Mais Imagens</button>
+        </div>
     </div>
 
-        
-        <!-- Seção: Design de Interiores -->
-        <div class="row">
-            <h5 class="center">Design de Interiores</h5>
-            <div id="gallery-row" class="col s12 m12">
-                <div class="col s12 m4 gallery">
-                    <img src="img/interiores (1).jpg" alt="Interior 1" class="materialboxed">
-                </div>
-                <div class="col s12 m4 gallery">
-                    <img src="img/interiores (2).jpg" alt="Interior 2" class="materialboxed">
-                </div>
-                <div class="col s12 m4 gallery">
-                    <img src="img/interiores (3).jpg" alt="Interior 3" class="materialboxed">
-                </div>
+    <!-- Seção: Infraestrutura -->
+    <div class="row">
+        <h5 class="center">Infraestrutura</h5>
+        <div id="infra-gallery" class="col s12">
+            <div class="col s12 m4 gallery">
+                <img src="img/infra (1).jpg" alt="Infraestrutura 1" data-caption="Desenvolvimento de estrada em área urbana.">
             </div>
-            <!-- Botão de Ver Mais -->
-    <div class="row center load-more-btn">
-        <button class="btn waves-effect waves-light blue" id="load-more-btn">Ver Mais Imagens</button>
-    </div>
-        
-        
-        <!-- Seção: Acabamentos C.C-->
-        <div class="row">
-            <h5 class="center">Acabamentos C.C</h5>
-            <div id="gallery-row" class="col s12 m12">
-                <div class="col s12 m4 gallery">
-                    <img src="img/acabamentos (1).jpg" alt="Interior 1" class="materialboxed">
-                </div>
-                <div class="col s12 m4 gallery">
-                    <img src="img/acabamentos (2).jpg" alt="Interior 2" class="materialboxed">
-                </div>
-                <div class="col s12 m4 gallery">
-                    <img src="img/acabamentos (3).jpg" alt="Interior 3" class="materialboxed">
-                </div>
+            <div class="col s12 m4 gallery">
+                <img src="img/infra (2).jpg" alt="Infraestrutura 2" data-caption="Projeto de rodovia interestadual.">
             </div>
-            <!-- Botão de Ver Mais -->
-    <div class="row center load-more-btn">
-        <button class="btn waves-effect waves-light blue" id="load-more-btn">Ver Mais Imagens</button>
-    </div>
-
-       
-       <!-- Seção: Arquitetura Moderna -->
-        <div class="row">
-            <h5 class="center">Arquitetura Moderna</h5>
-            <div id="gallery-row" class="col s12 m12">
-                <div class="col s12 m4 gallery">
-                    <img src="img/arquitetura (1).jpg" alt="Arquitetura 1" class="materialboxed">
-                </div>
-                <div class="col s12 m4 gallery">
-                    <img src="img/arquitetura (2).jpg" alt="Arquitetura 2" class="materialboxed">
-                </div>
-                <div class="col s12 m4 gallery">
-                    <img src="img/arquitetura (3).jpg" alt="Arquitetura 3" class="materialboxed"></a>
-                </div>
-                <!-- Botão de Ver Mais -->
-    <div class="row center load-more-btn">
-        <button class="btn waves-effect waves-light blue" id="load-more-btn">Ver Mais Imagens</button>
-    </div>
-            </div>  
-            
-
-        <!-- Seção: Projetos Especiais -->
-        <div class="row">
-            <h5 class="center">Projetos Especiais</h5>
-            <div id="gallery-row" class="col s12 m12">
-                <div class="col s12 m4 gallery">
-                    <img src="img/especial1.jpg" alt="Projeto Especial 1" class="materialboxed">
-                </div>
-                <div class="col s12 m4 gallery">
-                    <img src="img/especial2.jpg" alt="Projeto Especial 2" class="materialboxed">
-                </div>
-                <div class="col s12 m4 gallery">
-                    <img src="img/especial3.jpg" alt="Projeto Especial 3" class="materialboxed">
-                </div>
-                <!-- Botão de Ver Mais -->
-    <div class="row center load-more-btn">
-        <button class="btn waves-effect waves-light blue" id="load-more-btn">Ver Mais Imagens</button>
-    </div>
+            <div class="col s12 m4 gallery">
+                <img src="img/infra (3).jpg" alt="Infraestrutura 3" data-caption="Ponte moderna sobre o rio.">
             </div>
-
-
+        </div>
+        <div class="row center load-more-btn">
+            <button class="btn waves-effect waves-light blue" id="infra-load-more-btn">Ver Mais Imagens</button>
+        </div>
     </div>
-</section>
 
-<!-- Modal para mostrar detalhes da foto -->
-<div id="modal1" class="modal">
-    <div class="modal-content">
-        <h4 id="modal-title"></h4>
-        <p id="modal-description"></p>
-        <div id="similar-images" class="row"></div>
-    </div>
-    <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
-    </div>
-</div>
-
-
-<!-- Contact Section -->
-<section id="contact" class="py-5 bg-light">
-    <div class="container">
-        <h2 class="text-center">Entre em Contato</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <form>
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Nome</label>
-                        <input type="text" class="form-control" id="name" placeholder="Seu nome">
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">E-mail</label>
-                        <input type="email" class="form-control" id="email" placeholder="Seu e-mail">
-                    </div>
-                    <div class="mb-3">
-                        <label for="message" class="form-label">Mensagem</label>
-                        <textarea class="form-control" id="message" rows="4" placeholder="Sua mensagem"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </form>
+    <!-- Seção: Projetos Comerciais -->
+    <div class="row">
+        <h5 class="center">Projetos Comerciais</h5>
+        <div id="commercial-gallery" class="col s12">
+            <div class="col s12 m4 gallery">
+                <img src="img/comercial (1).jpg" alt="Comercial 1" data-caption="Edifício de escritórios moderno.">
             </div>
-            <div class="col-md-6">
-                <h5 class="center" class="center" class="center" class="center" class="center" class="center" class="center" class="center" class="center" class="center" class="center" class="center" class="center" class="center">Nossos Contatos</h5>
-                <p><strong>Endereço:</strong> Rua Exemplo, 123 - Cidade</p>
-                <p><strong>Telefone:</strong> (11) 1234-5678</p>
-                <p><strong>Email:</strong> contato@kikelekele.com</p>
-                <p><strong>Horário de Funcionamento:</strong> Seg - Sex: 08h00 - 18h00</p>
+            <div class="col s12 m4 gallery">
+                <img src="img/comercial (2).jpg" alt="Comercial 2" data-caption="Centro comercial urbano.">
             </div>
+            <div class="col s12 m4 gallery">
+                <img src="img/comercial (3).jpg" alt="Comercial 3" data-caption="Projeto de shopping center.">
+            </div>
+        </div>
+        <div class="row center load-more-btn">
+            <button class="btn waves-effect waves-light blue" id="commercial-load-more-btn">Ver Mais Imagens</button>
+        </div>
+    </div>
+
+    <!-- Modal para mostrar detalhes da foto -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4 id="modal-title"></h4>
+            <p id="modal-description"></p>
+            <div id="similar-images" class="row"></div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
         </div>
     </div>
 </section>
 
 <!-- Footer -->
-<footer class="page-footer grey darken-4">
-    <div class="container">
-        <p class="mb-0">© 2024 Kikelekele - Construção Civil e Prestação de Serviços. Todos os direitos reservados.</p>
-        <address>
-            <strong>Kikelekele Construções e Prestação de serviços. Lda</strong><br>
-            
-            <addr title="gps">
-                GPS: <a href="maps.google.com/#">Angola, Luanda, Cacuaco, Deolinda Rodrigues, Rua David Futa, Casa s/n°</a>
-            </addr><br>
-            <addr title="phone">Tel: <a href="tel:+244 945338877">+244 945338877</a></addr>
-        </address>
-        <address title="whatsapp">py na
-            <addr title="whatsapp">Zap: <a href="api.whatsapp.com/945338877">945338877</a></addr>
-        </address>
-        <address title="email">
-            <strong>Angel Tech 2.0</strong><br>
-            <addr title="email">E-mail: <a href="mailto: Kikelekele construct@gmail.com">kikelekele construct@gmail.com</a></addr>
-        </address>
-    </div>
+<footer>
+    <p>Kikelekele &copy; 2024. Todos os direitos reservados.</p>
 </footer>
+
+<!-- Script -->
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        // Inicializando o Sidenav para o menu mobile
-        var sidenavElems = document.querySelectorAll('.sidenav');
-        M.Sidenav.init(sidenavElems);
+        // Inicializando componentes do Materialize
+        M.Sidenav.init(document.querySelectorAll('.sidenav'));
+        M.Modal.init(document.querySelectorAll('.modal'));
+        M.Materialbox.init(document.querySelectorAll('.materialboxed'));
 
-        // Inicializando o MaterialBox (popup de imagem)
-        var elems = document.querySelectorAll('.materialboxed');
-        M.Materialbox.init(elems);
+        // Função genérica para carregar mais imagens
+        function loadMoreImages(galleryId, images) {
+            const gallery = document.getElementById(galleryId);
+            let imagesLoaded = 0;
 
-        // Inicializando o Modal
-        var modalElems = document.querySelectorAll('.modal');
-        M.Modal.init(modalElems);
-
-        // Imagens adicionais para carregar
-        const additionalImages = [
-            {
-                src: 'https://via.placeholder.com/400x300?text=Imagem+4',
-                alt: 'Imagem 4',
-                caption: 'Projeto 4 - Construção de ponte moderna.'
-            },
-            {
-                src: 'https://via.placeholder.com/400x300?text=Imagem+5',
-                alt: 'Imagem 5',
-                caption: 'Projeto 5 - Residência de luxo sustentável.'
-            },
-            {
-                src: 'https://via.placeholder.com/400x300?text=Imagem+6',
-                alt: 'Imagem 6',
-                caption: 'Projeto 6 - Complexo industrial de alto padrão.'
-            },
-            {
-                src: 'https://via.placeholder.com/400x300?text=Imagem+7',
-                alt: 'Imagem 7',
-                caption: 'Projeto 7 - Reforma de edifício comercial.'
-            },
-            {
-                src: 'https://via.placeholder.com/400x300?text=Imagem+8',
-                alt: 'Imagem 8',
-                caption: 'Projeto 8 - Projeto de um parque ecológico.'
-            }
-        ];
-
-        let imagesLoaded = 0;
-
-        // Função para carregar mais imagens ao clicar no botão
-        document.getElementById('load-more-btn').addEventListener('click', function() {
-            const galleryRow = document.getElementById('gallery-row');
-
-            for (let i = imagesLoaded; i < imagesLoaded + 4 && i < additionalImages.length; i++) {
-                let col = document.createElement('div');
-                col.classList.add('col', 's12', 'm4', 'gallery');
-                
-                let img = document.createElement('img');
-                img.src = additionalImages[i].src;
-                img.alt = additionalImages[i].alt;
-                img.classList.add('materialboxed');
-                img.setAttribute('data-caption', additionalImages[i].caption);
-                
-                col.appendChild(img);
-                galleryRow.appendChild(col);
-            }
-            
-            imagesLoaded += 4;
-            
-            // Reinitialize the Materialbox for the new images
-            M.Materialbox.init(document.querySelectorAll('.materialboxed'));
-
-            // Esconder o botão quando todas as imagens forem carregadas
-            if (imagesLoaded >= additionalImages.length) {
-                document.getElementById('load-more-btn').style.display = 'none';
-            }
-        });
-
-        // Exemplo de clique na imagem para abrir o modal com informações adicionais
-        document.querySelectorAll('.materialboxed').forEach(img => {
-            img.addEventListener('click', function() {
-                const modalTitle = document.getElementById('modal-title');
-                const modalDescription = document.getElementById('modal-description');
-                const similarImages = document.getElementById('similar-images');
-
-                // Definindo o título e descrição com base na imagem
-                modalTitle.textContent = img.alt;
-                modalDescription.textContent = img.getAttribute('data-caption');
-
-                // Adicionando imagens parecidas (exemplo)
-                similarImages.innerHTML = '';
-                for (let i = 0; i < 3; i++) {
+            return function() {
+                for (let i = imagesLoaded; i < imagesLoaded + 2 && i < images.length; i++) {
                     let col = document.createElement('div');
-                    col.classList.add('col', 's4');
-                    let similarImg = document.createElement('img');
-                    similarImg.src = 'https://via.placeholder.com/200x150?text=Similar+Image+' + (i + 1);
-                    similarImg.classList.add('responsive-img');
-                    col.appendChild(similarImg);
-                    similarImages.appendChild(col);
+                    col.classList.add('col', 's12', 'm4', 'gallery');
+                    
+                    let img = document.createElement('img');
+                    img.src = images[i].src;
+                    img.alt = images[i].alt;
+                    img.classList.add('materialboxed');
+                    img.setAttribute('data-caption', images[i].caption);
+                    
+                    col.appendChild(img);
+                    gallery.appendChild(col);
                 }
 
-                // Abrindo o modal
-                var modalInstance = M.Modal.getInstance(document.getElementById('modal1'));
-                modalInstance.open();
+                imagesLoaded += 2;
+                M.Materialbox.init(document.querySelectorAll('.materialboxed'));
+
+                if (imagesLoaded >= images.length) {
+                    this.style.display = 'none';
+                }
+            };
+        }
+
+        // Imagens adicionais
+        const civilImages = [
+            { src: 'img/pedreira (4).jpg', alt: 'Construção 4', caption: 'Construção de um novo estádio.' },
+            { src: 'img/pedreira (5).jpg', alt: 'Construção 5', caption: 'Projeto residencial de luxo.' }
+        ];
+
+        const infraImages = [
+            { src: 'img/infra (4).jpg', alt: 'Infraestrutura 4', caption: 'Expansão de sistema ferroviário.' },
+            { src: 'img/infra (5).jpg', alt: 'Infraestrutura 5', caption: 'Modernização de rede elétrica.' }
+        ];
+
+        const commercialImages = [
+            { src: 'img/comercial (4).jpg', alt: 'Comercial 4', caption: 'Novo centro de convenções.' },
+            { src: 'img/comercial (5).jpg', alt: 'Comercial 5', caption: 'Edifício corporativo sustentável.' }
+        ];
+
+        // Ativando botões "Ver Mais"
+        document.getElementById('civil-load-more-btn').addEventListener('click', loadMoreImages('civil-gallery', civilImages));
+        document.getElementById('infra-load-more-btn').addEventListener('click', loadMoreImages('infra-gallery', infraImages));
+        document.getElementById('commercial-load-more-btn').addEventListener('click', loadMoreImages('commercial-gallery', commercialImages));
+
+        // Exibir descrição no modal ao clicar na imagem
+        document.querySelectorAll('.gallery img').forEach(img => {
+            img.addEventListener('click', function() {
+                const modal = M.Modal.getInstance(document.getElementById('modal1'));
+                document.getElementById('modal-title').textContent = this.alt;
+                document.getElementById('modal-description').textContent = this.getAttribute('data-caption');
+                modal.open();
             });
         });
     });
 </script>
+
 <script src="js/materialize.min.js"></script>
 </body>
 </html>

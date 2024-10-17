@@ -32,10 +32,41 @@
             color: white;
             text-align: center;
         }
-        .fixed-action-btn {
+        .faq-button {
             position: fixed;
-            bottom: 45px;
-            right: 24px;
+            bottom: 20px;
+            right: 20px;
+            background-color: #f39c12;
+            color: white;
+            border-radius: 50%;
+            height: 60px;
+            width: 60px;
+            text-align: center;
+            font-size: 30px;
+            line-height: 60px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        .faq-button:hover {
+            background-color: #e67e22;
+        }
+        .accordion-button {
+            background-color: #f1f1f1;
+            border: none;
+            padding: 15px;
+            cursor: pointer;
+            width: 100%;
+            text-align: left;
+            font-size: 16px;
+            transition: background-color 0.4s ease;
+        }
+        .accordion-button:hover {
+            background-color: #ddd;
+        }
+        .accordion-body {
+            padding: 15px;
+            background-color: white;
+            border: 1px solid #ddd;
         }
     </style>
 </head>
@@ -47,48 +78,67 @@
         <a href="#" class="brand-logo">Kikelekele</a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">&#9778;</i></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
             <li><a href="about.html">Sobre Nós</a></li>
             <li><a href="services.html">Serviços</a></li>
             <li><a href="projects.html">Projetos</a></li>
+            <li><a href="faq.html">FAQ</a></li>
             <li><a href="#contact">Contato</a></li>
         </ul>
     </div>
 </nav>
 
 <ul class="sidenav" id="mobile-demo">
+    <li><a href="index.html">Home</a></li>
     <li><a href="about.html">Sobre Nós</a></li>
     <li><a href="services.html">Serviços</a></li>
     <li><a href="projects.html">Projetos</a></li>
+    <li><a href="faq.html">FAQ</a></li>
     <li><a href="#contact">Contato</a></li>
 </ul>
-
-        </div>
-    </div>
-</nav>
 
 <!-- Hero Section -->
 <section class="hero">
     <div class="container">
         <h1>Bem-vindo à Kikelekele</h1>
         <p>Sua parceira em construção civil e serviços especializados</p>
-        <a href="#services" class="btn-large waves-effect waves-light blue">Nossos Serviços</a>
+        <a href="services.html" class="btn-large waves-effect waves-light blue">Nossos Serviços</a>
     </div>
 </section>
 
-<!-- About Section -->
-<section id="about" class="section scrollspy">
+<!-- Services Section (omitido para simplicidade) -->
+
+<!-- Contact Section (omitido para simplicidade) -->
+
+<!-- Projects Section -->
+<section id="projects" class="section scrollspy">
     <div class="container">
+        <h2 class="center">Projetos Recentes</h2>
         <div class="row">
-            <div class="col s12 m6">
-                <h2>Sobre Nós</h2>
-                <p>A Kikelekele é uma empresa especializada em construção civil e prestação de serviços, com mais de 20 anos de experiência no mercado. Nosso compromisso é entregar qualidade, segurança e eficiência em todos os projetos.</p>
+            <div class="col s12 m4">
+                <img src="img/recente (100).jpg" alt="Projeto 1" class="responsive-img">
+                <h5>Edifício Comercial</h5>
+                <p>Projeto de construção de um edifício comercial moderno no centro da cidade.</p>
             </div>
-            <div class="col s12 m6">
-                <img src="https://via.placeholder.com/600x400" alt="Sobre nós" class="responsive-img">
+            <div class="col s12 m4">
+                <img src="img/pedreira (6).jpg" alt="Projeto 2" class="responsive-img">
+                <h5>Residência Familiar</h5>
+                <p>Projeto residencial de alto padrão com foco em eficiência energética.</p>
             </div>
+            <div class="col s12 m4">
+                <img src="img/arquitetura (3).jpg" alt="Projeto 3" class="responsive-img">
+                <h5>Parque Industrial</h5>
+                <p>Desenvolvimento de um complexo industrial completo e eficiente.</p>
+            </div>
+        </div>
+        <div class="text-center mt-3">
+            <button class="btn btn-primary center" type="button">
+                <a href="projects.html" class="link">Ver Mais</a>
+            </button>
         </div>
     </div>
 </section>
+
 
 <!-- Services Section -->
 <section id="services" class="section grey lighten-4 scrollspy">
@@ -98,7 +148,7 @@
             <div class="col s12 m4">
                 <div class="card service-card">
                     <div class="card-image">
-                        <img src="https://via.placeholder.com/400x300" alt="Construção Civil">
+                        <img src="img/recente (99).jpg" alt="Construção Civil">
                     </div>
                     <div class="card-content">
                         <span class="card-title">Construção Civil</span>
@@ -109,7 +159,7 @@
             <div class="col s12 m4">
                 <div class="card service-card">
                     <div class="card-image">
-                        <img src="https://via.placeholder.com/400x300" alt="Reformas e Manutenção">
+                        <img src="img/reforma (5).jpg" alt="Reformas e Manutenção">
                     </div>
                     <div class="card-content">
                         <span class="card-title">Reformas e Manutenção</span>
@@ -120,7 +170,7 @@
             <div class="col s12 m4">
                 <div class="card service-card">
                     <div class="card-image">
-                        <img src="https://via.placeholder.com/400x300" alt="Consultoria Técnica">
+                        <img src="img/consultoria (5).jpg" alt="Consultoria Técnica">
                     </div>
                     <div class="card-content">
                         <span class="card-title">Consultoria Técnica</span>
@@ -130,41 +180,13 @@
             </div>
         </div>
         <div class="text-center mt-3">
-                <button class="btn btn-primary" type="button">
-                    <a href="faq.html" class="link">Ver Mais</a>
-                </button>
-            </div>
+            <button class="btn btn-primary" type="button">
+                <a href="services.html" class="link">Ver Mais</a>
+            </button>
+        </div>
     </div>
 </section>
 
-<!-- Projects Section -->
-<section id="projects" class="section scrollspy">
-    <div class="container">
-        <h2 class="center">Projetos Recentes</h2>
-        <div class="row">
-            <div class="col s12 m4">
-                <img src="https://via.placeholder.com/400x300" alt="Projeto 1" class="responsive-img">
-                <h5>Edifício Comercial</h5>
-                <p>Projeto de construção de um edifício comercial moderno no centro da cidade.</p>
-            </div>
-            <div class="col s12 m4">
-                <img src="https://via.placeholder.com/400x300" alt="Projeto 2" class="responsive-img">
-                <h5>Residência Familiar</h5>
-                <p>Projeto residencial de alto padrão com foco em eficiência energética.</p>
-            </div>
-            <div class="col s12 m4">
-                <img src="https://via.placeholder.com/400x300" alt="Projeto 3" class="responsive-img">
-                <h5>Parque Industrial</h5>
-                <p>Desenvolvimento de um complexo industrial completo e eficiente.</p>
-            </div>
-        </div>
-        <div class="text-center mt-3">
-                <button class="btn btn-primary center" type="button">
-                    <a href="faq.html" class="link">Ver Mais</a>
-                </button>
-            </div>
-    </div>
-</section>
 
 <!-- Contact Section -->
 <section id="contact" class="section grey lighten-4 scrollspy">
@@ -199,64 +221,36 @@
     </div>
 </section>
 
+
 <!-- FAQ Button -->
-<a href="#faq" class="faq-button" title="FAQ">?</a>
-
-
-<!-- FAQ Section -->
-<section id="faq" class="section scrollspy bg-light">
-    <div class="container">
-        <h2 class="text-center">Perguntas Frequentes (FAQ)</h2>
-        <div class="accordion" id="faqAccordion">
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        O que é Kikelekele?
-                    </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
-                    <div class="accordion-body">
-                        A Kikelekele é uma empresa especializada em construção civil e prestação de serviços, com mais de 20 anos de experiência no mercado.
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mt-3">
-                <button class="btn btn-primary" type="button">
-                    <a href="faq.html" class="link">Ver Mais</a>
-                </button>
-            </div>
-            <!-- Adicione mais itens de FAQ aqui -->
-        </div>
-    </div>
-</section>
+<a href="faq.html" class="faq-button" title="FAQ">?</a>
 
 <!-- Footer -->
 <footer class="page-footer grey darken-4">
     <div class="container">
-        <p class="mb-0">© 2024 Kikelekele - Construção Civil e Prestação de Serviços. Todos os direitos reservados.</p>
+        <p>© 2024 Kikelekele - Construção Civil e Prestação de Serviços. Todos os direitos reservados.</p>
         <address>
             <strong>Kikelekele Construções e Prestação de serviços. Lda</strong><br>
-            
-            <addr title="gps">
-                GPS: <a href="maps.google.com/#">Angola, Luanda, Cacuaco, Deolinda Rodrigues, Rua David Futa, Casa s/n°</a>
-            </addr><br>
-            <addr title="phone">Tel: <a href="tel:+244 945338877">+244 945338877</a></addr>
-        </address>
-        <address title="whatsapp">py na
-            <addr title="whatsapp">Zap: <a href="api.whatsapp.com/945338877">945338877</a></addr>
-        </address>
-        <address title="email">
-            <strong>Angel Tech 2.0</strong><br>
-            <addr title="email">E-mail: <a href="mailto: Kikelekele construct@gmail.com">kikelekele construct@gmail.com</a></addr>
+            <a href="https://maps.google.com/#">Angola, Luanda, Cacuaco, Deolinda Rodrigues, Rua David Futa, Casa s/n°</a><br>
+            Tel: <a href="tel:+244945338877">+244 945338877</a><br>
+            WhatsApp: <a href="https://api.whatsapp.com/send?phone=244945338877">+244 945338877</a><br>
+            E-mail: <a href="mailto:kikelekeleconstruct@gmail.com">kikelekeleconstruct@gmail.com</a>
         </address>
     </div>
 </footer>
+
+
 <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var elems = document.querySelectorAll('.sidenav');
-            var instances = M.Sidenav.init(elems);
-        });
-    </script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        M.Sidenav.init(elems);
+
+        // Inicialização do FAQ Accordion
+        var faqElems = document.querySelectorAll('.accordion');
+        M.Collapsible.init(faqElems);
+    });
+</script>
+
 <script src="js/materialize.min.js"></script>
 </body>
 </html>

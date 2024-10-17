@@ -23,6 +23,30 @@
     </style>
 </head>
 <body>
+<!-- Navbar -->
+<nav class="nav-extended grey darken-4">
+    <div class="nav-wrapper container">
+        <a href="#" class="brand-logo">Kikelekele</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">&#9778;</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="about.html">Sobre Nós</a></li>
+            <li><a href="services.html">Serviços</a></li>
+            <li><a href="projects.html">Projetos</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </div>
+</nav>
+
+<ul class="sidenav" id="mobile-demo">
+    <li><a href="about.html">Sobre Nós</a></li>
+    <li><a href="services.html">Serviços</a></li>
+    <li><a href="projects.html">Projetos</a></li>
+    <li><a href="#contact">Contato</a></li>
+</ul>
+
+        </div>
+    </div>
+</nav>
 
 
 
@@ -58,6 +82,8 @@
                 </button>
             </div>
 </section>
+
+
 <!-- Contact Section -->
 <section id="contact" class="section grey lighten-4 scrollspy">
     <div class="container">
@@ -66,15 +92,15 @@
             <div class="col s12 m6">
                 <form>
                     <div class="input-field">
-                        <input type="text" id="name">
+                        <input type="text" id="name" placeholder="Seu nome">
                         <label for="name">Nome</label>
                     </div>
                     <div class="input-field">
-                        <input type="email" id="email">
+                        <input type="email" id="email" placeholder="Seu e-mail">
                         <label for="email">E-mail</label>
                     </div>
                     <div class="input-field">
-                        <textarea id="message" class="materialize-textarea"></textarea>
+                        <textarea id="message" class="materialize-textarea" placeholder="Sua mensagem"></textarea>
                         <label for="message">Mensagem</label>
                     </div>
                     <button type="submit" class="btn-large waves-effect waves-light blue">Enviar</button>
@@ -93,7 +119,7 @@
  
 
 <!-- Footer -->
-<footer class="py-3 bg-dark text-white">
+<footer class="page-footer grey darken-4">
     <div class="container">
         <p class="mb-0">© 2024 Kikelekele - Construção Civil e Prestação de Serviços. Todos os direitos reservados.</p>
         <address>
@@ -104,7 +130,7 @@
             </addr><br>
             <addr title="phone">Tel: <a href="tel:+244 945338877">+244 945338877</a></addr>
         </address>
-        <address title="whatsapp">
+        <address title="whatsapp">py na
             <addr title="whatsapp">Zap: <a href="api.whatsapp.com/945338877">945338877</a></addr>
         </address>
         <address title="email">
@@ -113,6 +139,8 @@
         </address>
     </div>
 </footer>
+
+
 <script>
         document.addEventListener('DOMContentLoaded', function() {
             var elems = document.querySelectorAll('.sidenav');

@@ -39,6 +39,7 @@
 </nav>
 
 <ul class="sidenav" id="mobile-demo">
+    <li><a href="index.html">Home</a></li>
     <li><a href="about.html">Sobre Nós</a></li>
     <li><a href="services.html">Serviços</a></li>
     <li><a href="projects.html">Projetos</a></li>
@@ -48,15 +49,17 @@
         </div>
     </div>
 </nav>
-<!-- Serviços -->
+
+
+<!-- Services Section -->
 <section id="services" class="section grey lighten-4 scrollspy">
     <div class="container">
-        <h2>Nossos Serviços</h2>
+        <h2 class="center">Nossos Serviços</h2>
         <div class="row">
             <div class="col s12 m4">
                 <div class="card service-card">
                     <div class="card-image">
-                        <img src="https://via.placeholder.com/400x300" alt="Construção Civil">
+                        <img src="img/recente (99).jpg" alt="Construção Civil">
                     </div>
                     <div class="card-content">
                         <span class="card-title">Construção Civil</span>
@@ -64,73 +67,60 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card">
+            <div class="col s12 m4">
+                <div class="card service-card">
                     <div class="card-image">
-                    <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Reformas e Manutenção"></div>
-                    <div class="card-body">
-                        <h5 class="card-title">Reformas e Manutenção</h5>
-                        <p class="card-text">Reformas em imóveis residenciais e comerciais, garantindo a durabilidade e modernização dos espaços.</p>
+                        <img src="img/reforma (5).jpg" alt="Reformas e Manutenção">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Reformas e Manutenção</span>
+                        <p>Realizamos reformas e manutenções em diversos tipos de imóveis, com foco em sustentabilidade e durabilidade.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card">
+            <div class="col s12 m4">
+                <div class="card service-card">
                     <div class="card-image">
-                    <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Consultoria"></div>
-                    <div class="card-body">
-                        <h5 class="card-title">Consultoria Técnica</h5>
-                        <p class="card-text">Consultoria especializada para garantir a execução eficiente e sustentável de seus projetos.</p>
+                        <img src="img/consultoria (5).jpg" alt="Consultoria Técnica">
                     </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-image">
-                    <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Arquitetura Moderna"></div>
-                    <div class="card-body">
-                        <h5 class="card-title">Arquitetura Moderna</h5>
-                        <p class="card-text">Arquitetura Moderna, de edifícios industriais, privados, residencias urbanas e imóveis.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-image">
-                    <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Design de Interiores "></div>
-                    <div class="card-body">
-                        <h5 class="card-title">Design de Interiores </h5>
-                        <p class="card-text">Design de interiores de edifícios, imóveis, apartamentos e complexos industriais.</p>
+                    <div class="card-content">
+                        <span class="card-title">Consultoria Técnica</span>
+                        <p>Oferecemos consultoria técnica especializada para garantir que seus projetos sejam realizados da forma mais eficiente possível.</p>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="text-center mt-3">
+                <button class="btn btn-primary" type="button">
+                    <a href="services.html" class="link">Ver Mais</a>
+                </button>
+            </div>
     </div>
 </section>
 
 <!-- Contact Section -->
-<section id="contact" class="py-5 bg-light">
+<section id="contact" class="section grey lighten-4 scrollspy">
     <div class="container">
-        <h2 class="text-center">Entre em Contato</h2>
+        <h2 class="center">Entre em Contato</h2>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col s12 m6">
                 <form>
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Nome</label>
-                        <input type="text" class="form-control" id="name" placeholder="Seu nome">
+                    <div class="input-field">
+                        <input type="text" id="name" placeholder="Seu nome">
+                        <label for="name">Nome</label>
                     </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">E-mail</label>
-                        <input type="email" class="form-control" id="email" placeholder="Seu e-mail">
+                    <div class="input-field">
+                        <input type="email" id="email" placeholder="Seu e-mail">
+                        <label for="email">E-mail</label>
                     </div>
-                    <div class="mb-3">
-                        <label for="message" class="form-label">Mensagem</label>
-                        <textarea class="form-control" id="message" rows="4" placeholder="Sua mensagem"></textarea>
+                    <div class="input-field">
+                        <textarea id="message" class="materialize-textarea" placeholder="Sua mensagem"></textarea>
+                        <label for="message">Mensagem</label>
                     </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <button type="submit" class="btn-large waves-effect waves-light blue">Enviar</button>
                 </form>
             </div>
-            <div class="col-md-6">
+            <div class="col s12 m6">
                 <h5>Nossos Contatos</h5>
                 <p><strong>Endereço:</strong> Rua Exemplo, 123 - Cidade</p>
                 <p><strong>Telefone:</strong> (11) 1234-5678</p>
@@ -142,7 +132,7 @@
 </section>
 
 <!-- Footer -->
-<footer class="py-3 bg-dark text-white">
+<footer class="page-footer grey darken-4">
     <div class="container">
         <p class="mb-0">© 2024 Kikelekele - Construção Civil e Prestação de Serviços. Todos os direitos reservados.</p>
         <address>
@@ -153,7 +143,7 @@
             </addr><br>
             <addr title="phone">Tel: <a href="tel:+244 945338877">+244 945338877</a></addr>
         </address>
-        <address title="whatsapp">
+        <address title="whatsapp">py na
             <addr title="whatsapp">Zap: <a href="api.whatsapp.com/945338877">945338877</a></addr>
         </address>
         <address title="email">
@@ -162,6 +152,7 @@
         </address>
     </div>
 </footer>
+
 
 <script>
         document.addEventListener('DOMContentLoaded', function() {

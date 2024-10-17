@@ -1,67 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ - Consultoria TI</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>FAQ - Kikelekele Construção</title>
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <style>
+        .accordion-button {
+            background-color: #f1f1f1;
+            border: none;
+            padding: 15px;
+            cursor: pointer;
+            width: 100%;
+            text-align: left;
+            font-size: 16px;
+            transition: background-color 0.4s ease;
+        }
+        .accordion-button:hover {
+            background-color: #ddd;
+        }
+        .accordion-body {
+            padding: 15px;
+            background-color: white;
+            border: 1px solid #ddd;
+        }
+    </style>
 </head>
 <body>
-    <?php include 'navbar.php'; ?>
 
+<!-- Navbar -->
+<nav class="nav-extended grey darken-4">
+    <div class="nav-wrapper container">
+        <a href="#" class="brand-logo">Kikelekele</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">&#9778;</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Sobre Nós</a></li>
+            <li><a href="services.html">Serviços</a></li>
+            <li><a href="projects.html">Projetos</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </div>
+</nav>
+
+<ul class="sidenav" id="mobile-demo">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">Sobre Nós</a></li>
+    <li><a href="services.html">Serviços</a></li>
+    <li><a href="projects.html">Projetos</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="#contact">Contato</a></li>
+</ul>
+
+<!-- FAQ Section -->
+<section id="faq" class="section scrollspy">
     <div class="container">
-        <h1 class="my-4">Perguntas Frequentes</h1>
+        <h2 class="center">Perguntas Frequentes</h2>
         <div class="accordion" id="faqAccordion">
-            <div class="card">
-                <div class="card-header" id="headingOne">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Quais serviços vocês oferecem?
-                        </button>
-                    </h2>
-                </div>
-
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
-                    <div class="card-body">
-                        Oferecemos uma ampla gama de serviços, incluindo consultoria de TI, desenvolvimento de software, segurança da informação e suporte técnico.
+            <!-- Perguntas 1 a 50 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading1">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                        1. O que é a Kikelekele?
+                    </button>
+                </h2>
+                <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        A Kikelekele é uma empresa especializada em construção civil e prestação de serviços.
                     </div>
                 </div>
             </div>
 
-            <div class="card">
-                <div class="card-header" id="headingTwo">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Como posso contratar seus serviços?
-                        </button>
-                    </h2>
-                </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
-                    <div class="card-body">
-                        Você pode entrar em contato conosco através do nosso site ou pelo e-mail informado na página de "Informações".
+            <!-- Repita para as demais 49 perguntas -->
+            <!-- Exemplo de mais uma pergunta -->
+<!-- Pergunta 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading2">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                        2. Quais serviços a Kikelekele oferece?
+                    </button>
+                </h2>
+                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        A Kikelekele oferece serviços de construção civil, reformas, manutenção e consultoria técnica.
                     </div>
                 </div>
             </div>
 
-            <div class="card">
-                <div class="card-header" id="headingThree">
-                    <h2 class="mb-0">
-                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Quais são seus preços?
-                        </button>
-                    </h2>
+            <!-- Pergunta 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading3">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                        3. A Kikelekele atua apenas em Angola?
+                    </button>
+                </h2>
+                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Sim, atualmente nossos serviços são prestados em Angola, com foco em Luanda e regiões adjacentes.
+                    </div>
                 </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
-                    <div class="card-body">
-                        Nossos preços variam de acordo com o tipo de projeto. Para obter um orçamento detalhado, entre em contato conosco.
+            </div>
+
+            <!-- Repita o mesmo padrão para as perguntas até a número 50 -->
+            <!-- Exemplo da pergunta 50 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading50">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse50" aria-expanded="false" aria-controls="collapse50">
+                        50. Como posso obter um orçamento para o meu projeto?
+                    </button>
+                </h2>
+                <div id="collapse50" class="accordion-collapse collapse" aria-labelledby="heading50" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Você pode entrar em contato conosco através do nosso formulário de contato ou pelo telefone e agendar uma reunião para discutir os detalhes do seu projeto.
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</section>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Footer -->
+<footer class="page-footer grey darken-4">
+    <div class="container">
+        <p>© 2024 Kikelekele - Construção Civil e Prestação de Serviços. Todos os direitos reservados.</p>
+        <address>
+            <strong>Kikelekele Construções e Prestação de serviços. Lda</strong><br>
+            <a href="https://maps.google.com/#">Angola, Luanda, Cacuaco, Deolinda Rodrigues, Rua David Futa, Casa s/n°</a><br>
+            Tel: <a href="tel:+244945338877">+244 945338877</a><br>
+            WhatsApp: <a href="https://api.whatsapp.com/send?phone=244945338877">+244 945338877</a><br>
+            E-mail: <a href="mailto:kikelekeleconstruct@gmail.com">kikelekeleconstruct@gmail.com</a>
+        </address>
+    </div>
+</footer>
+
+<script src="js/materialize.min.js"></script>
 </body>
 </html>
